@@ -7,6 +7,9 @@
     <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
     <title>Frontend Mentor | Product Preview Card Component</title>
 </head>
 
@@ -17,21 +20,31 @@
                 alt="A glass bottle of Gabrielle Chanel perfume sits on a white table surrounded by green leaves" />
         </figure>
         <div class="text">
-            <h1>perfume</h1>
-            <h2>Gabrielle Essence Eau De Parfum</h2>
-            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>            
+            <div class="description">
+                <h1>perfume</h1>
+                <h2>Gabrielle Essence Eau De Parfum</h2>
+                <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>   
+            </div>         
+            <div class="price">
+                <h2>$149.99</h2>
+                <span>$169.99</span>
+            </div>
+            <button><img src="images/icon-cart.svg" alt="shopping cart icon"/> Add to Cart</button>
         </div>
-        <div class="price">
-            <h2>$149.99</h2>
-            <p><span>$169.99</span></p>
-        </div>
-        <button><img src="images/icon-cart.svg" alt="shopping cart icon" /> Add to Cart</button>
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://allyceamidon.com/">Allyce Amidon</a>.
+        </footer>
     </div>
-
-    <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://allyceamidon.com/">Allyce Amidon</a>.
-    </footer>
 </body>
-
+<script>
+    const button = document.querySelector("button");
+    button.addEventListener("mouseover", function() {
+        button.classList.add("shadow");
+    });
+    button.addEventListener("mouseout", function () {
+        button.classList.remove("shadow");
+    });
+</script>
 </html>
