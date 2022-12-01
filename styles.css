@@ -7,7 +7,7 @@ font-family: 'Montserrat', sans-serif; */
 - Dark grayish blue: hsl(228, 12%, 48%)
 - White: hsl(0, 0%, 100%) */
 
-
+/**********MOBILE STYLES************/
 /* General Styles */
 * {
     margin: 0;
@@ -28,6 +28,8 @@ body {
 /* Hero Image Styles */
 figure {
     background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin: 0;
 }
 
@@ -58,9 +60,9 @@ h1 {
 h2 {
     font-family: 'Fraunces', serif;
     font-size: 2.5em;
+    line-height: 1em;
     margin: 0;
     padding-bottom: 15px;
-    line-height: 1em;
 }
 
 .description p {
@@ -121,4 +123,50 @@ button img {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/**************DESKTOP STYLES******************/
+@media (min-width: 630px) {
+    body {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+    }
+    
+    .content {
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 400px;
+        max-width: 600px;
+        min-width: 200px;
+        overflow: hidden;
+    }
+
+    figure {
+        background-color: hsl(30, 38%, 92%);
+        border-top-right-radius: 0;
+        flex: 1 1 200px;
+    }
+
+    .hero img {
+        border-top-right-radius: 0;
+        content: url(images/image-product-desktop.jpg);
+    }
+
+    .text {
+        border-bottom-left-radius: 0;
+        flex: 1 1 200px;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: .9em;
+    }
+    
+    h2 {
+        font-size: 2.2em;
+    }
+
 }
