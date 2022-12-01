@@ -32,6 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/amidona/product-preview-card](https://github.com/amidona/product-preview-card)
+- Live Site URL: [https://amidona.github.io/product-preview-card/](https://amidona.github.io/product-preview-card/)
 
 ## My process
 
